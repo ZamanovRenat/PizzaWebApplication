@@ -26,5 +26,13 @@ namespace PizzaWebApplication.Models
         /// Фото пиццы
         /// </summary>
         public string ImageUrl { get; set; }
+        /// <summary>
+        /// Внешний ключ - категория пиццы
+        /// </summary>
+        public int SectionId { get; set; }
+        /// <summary>
+        /// Навигационное свойство - Категория пиццы
+        /// </summary>
+        public Section? Section { get; set; }
     }
 }
